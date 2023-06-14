@@ -1,0 +1,46 @@
+\\ Faça um código para juntar o nome e sobrenome em um nome completo.
+#include <stdio.h>
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv) {
+char nome[30], sobrenome[30], nome_completo[60];
+int i, j;
+j = 0;
+i = 0;
+
+sobrenome[0] = 'B';
+sobrenome[1] = 'i';
+sobrenome[2] = 'e';
+sobrenome[3] = 'l';
+sobrenome[4] = 'e';
+sobrenome[5] = 'c';
+sobrenome[6] = 'k';
+sobrenome[7] = 'y';
+sobrenome[8] = '\0';
+
+printf("\n sobrenme: %s \n", sobrenome);
+
+nome[0] = 'T';
+nome[1] = 'a';
+nome[2] = 'l';
+nome[3] = 'i';
+nome[4] = 't';
+nome[5] = 'a';
+nome[6] = '\0';
+
+printf("\n Nome: %s \n", nome);
+
+while (nome[i] != '\0') {
+    nome_completo[i + 1] = sobrenome[j];
+    i++;
+    j++;
+}
+
+nome_completo[i + j] = '\0';
+  cout << "\n\t O nome completo é:" << nome << " " << sobrenome << endl;
+
+      return 0;
+}
