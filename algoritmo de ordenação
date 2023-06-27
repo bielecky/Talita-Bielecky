@@ -7,7 +7,7 @@ using namespace std;
 void bubblesort( int v[10], int n) {
     cout << "Execução do Algoritmo Bubblesort." << endl;
 }
-
+ 
 void insertionsort(int *v) {
     cout << " Execução do Algoritmo Insertionsort." << endl;
 }
